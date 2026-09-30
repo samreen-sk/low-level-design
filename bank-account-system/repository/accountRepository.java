@@ -1,4 +1,6 @@
-package bank-account-system.repository;
+package repository;
+
+import model.bankAccountModel;
 
 import java.util.*;
 public class accountRepository {

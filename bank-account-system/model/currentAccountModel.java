@@ -1,8 +1,9 @@
+package model;
 
 public class currentAccountModel extends bankAccountModel {
     double limit;
 
-    public currentAccountModel(double limit, String bankAcc, String accHolderName, double balance) {
+    public currentAccountModel(String bankAcc, String accHolderName, double balance,double limit) {
         super(bankAcc, accHolderName, balance);
         this.limit = limit;
     }
@@ -11,7 +12,7 @@ public class currentAccountModel extends bankAccountModel {
         if(amount<=0){
             throw new IllegalArgumentException("Invalid amount.");
         }
-        if(getBalance()-amount<minBalance){
+        if(getBalance()-amount<limit){
             throw new IllegalArgumentException("Insufficient Amount");
         }
         setBalance(getBalance()-amount);
