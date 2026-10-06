@@ -64,7 +64,5 @@ public class ParkingSpot {
     vehicle=null;
     System.out.println("The vehicle is removed from the spot "+ spotId);
 
-   }
-
-    
+   } 
 }
