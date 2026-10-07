@@ -1,5 +1,5 @@
 package interfaces;
 
-interface  Payment {
+public interface  Payment {
     void pay(double amount);
 }

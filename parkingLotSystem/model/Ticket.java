@@ -38,6 +38,10 @@ public class Ticket {
         return exitTime;
     }
 
+    public boolean getClosed(){
+        return closed;
+    }
+
     public void closeTicket(){
         if(closed){
             System.out.println("Already The ticket is closed.");
